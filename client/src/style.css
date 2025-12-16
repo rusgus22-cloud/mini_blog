@@ -1,0 +1,173 @@
+/* ===== RESET ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== BASE ===== */
+body {
+  min-height: 100vh;
+  background: radial-gradient(1200px circle at top, #0f172a, #020617);
+  color: #e5e7eb;
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, sans-serif;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 40px 16px;
+}
+
+/* ===== TITLES ===== */
+.title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 32px;
+  letter-spacing: 0.5px;
+}
+
+/* ===== CARD (ADD POST) ===== */
+.card {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 32px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* ===== INPUTS ===== */
+input,
+textarea {
+  width: 100%;
+  background: rgba(15, 23, 42, 0.8);
+  color: #e5e7eb;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 12px 14px;
+  font-size: 14px;
+  margin-bottom: 14px;
+  outline: none;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #9ca3af;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.3);
+}
+
+/* ===== BUTTONS ===== */
+button {
+  appearance: none;
+  border: none;
+  border-radius: 12px;
+  padding: 10px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  background: linear-gradient(135deg, #2563eb, #3b82f6);
+  color: white;
+  transition: transform 0.15s ease, box-shadow 0.15s ease,
+    opacity 0.15s ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(59, 130, 246, 0.35);
+}
+
+button:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+/* ===== SECONDARY BUTTON ===== */
+button.secondary {
+  background: rgba(255, 255, 255, 0.08);
+  color: #e5e7eb;
+  margin-right: 8px;
+}
+
+button.secondary:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+/* ===== DANGER BUTTON ===== */
+button.danger {
+  background: linear-gradient(135deg, #dc2626, #ef4444);
+  margin-bottom: 10px;
+}
+
+button.danger:hover {
+  box-shadow: 0 8px 20px rgba(239, 68, 68, 0.35);
+}
+
+/* ===== POST CARD ===== */
+.post {
+  background: rgba(255, 255, 255, 0.035);
+  border-radius: 18px;
+  padding: 20px;
+  margin-bottom: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.45);
+}
+
+.post h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #f9fafb;
+}
+
+.post p {
+  color: #d1d5db;
+  margin-bottom: 14px;
+}
+
+/* ===== COMMENTS ===== */
+.comment {
+  background: rgba(15, 23, 42, 0.9);
+  border-radius: 10px;
+  padding: 8px 12px;
+  margin: 6px 0;
+  font-size: 13px;
+  color: #e5e7eb;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 600px) {
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .container {
+    padding: 24px 12px;
+  }
+}
+.reply {
+  margin-left: 10px;
+  font-size: 12px;
+  background: transparent;
+  color: #60a5fa;
+}
+
+.reply-box {
+  margin-left: 20px;
+  margin-top: 6px;
+  padding: 6px 10px;
+  background: rgba(255,255,255,0.06);
+  border-left: 3px solid #3b82f6;
+  border-radius: 6px;
+}
